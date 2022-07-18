@@ -52,7 +52,7 @@ const handleSubmit = (event) => {
   if (inputValue !== '') {
     socket.emit('submit_chat', inputValue);
   }
-  drawNewChat(`me : ${inputValue}`);
+  drawNewChat(`me : ${inputValue}`, true);
   event.target.elements[0].value = '';
 };
 
